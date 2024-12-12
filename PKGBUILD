@@ -98,7 +98,7 @@ build() {
       --no-configuration-cache
 }
 
-package_gradle() {
+package_gradle8.8() {
   cd \
     "${_tarname}/dist"
   optdepends=(
@@ -156,7 +156,7 @@ package_gradle() {
     "${pkgdir}/usr/bin/${_pkgname}"
 }
 
-package_gradle-doc() {
+package_gradle8.8-doc() {
   pkgdesc+=' (documentation)'
   options=(
     '!strip'
@@ -172,7 +172,7 @@ package_gradle-doc() {
     "${pkgdir}/usr/share/java/${_pkgname}/docs"
 }
 
-package_gradle-src() {
+package_gradle8.8-src() {
   pkgdesc+=' (sources)'
   options=(
     '!strip'
